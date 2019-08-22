@@ -20,7 +20,7 @@ exec(command, function(err, stdout, stderr) {if (err){console.log(stderr);res.se
 
 
 app.listen(port, () => {
-  console.log('Server started on port '+port);
+  console.log('Server started on   port '+port);
   });
 
 console.log(num);
